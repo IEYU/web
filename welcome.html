@@ -1,0 +1,40 @@
+<!--front page(scroll down to access main page)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href= "static/welcome.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Yiyu's Personal Website</title>
+</head>
+<body>
+	<div id="title" class="d-flex align-items-center min-vh-100 justify-content-center gradient">
+		<div class="text-center">
+			<h1 class="display-1 large-h1 neonText" style="color:white;">Maggie Gong</h1><br>
+			<h5 class="text-center typewritter" style="color:white;">Hi, I'm Maggie, nice to meet you.</h5>
+		</div>
+		<div class="arrow">
+			<a href="main.html"><img src="static/img/arrow.png" width="100" height="100"></a>
+		</div>
+	</div>
+
+	<!-- <div data-tf-live="01J14FM44KB52NBJ3TYBHT69W3"></div><script src="//embed.typeform.com/next/embed.js"></script> -->
+
+	<script src="static/jquery-3.7.1.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			console.log("page is loaded");
+			$(window).scroll(function() {
+				console.log('Scroll event fired');
+				if ($(window).scrollTop() + $(window).height() >= $(document).height() + 10) {
+					setTimeout(function() {
+						window.location = "/main";
+					}, 300);
+				}
+			});
+		});
+	</script>
+</body>
+</html>

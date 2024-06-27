@@ -1,0 +1,129 @@
+footer {
+  position: fixed;
+  height:fit-content;
+  bottom: 0;
+  width: 100%;
+  background-color: #2A272A !important;
+}
+
+.container.content {
+  flex: 1; /* This makes the content container grow to fill the remaining vertical space */
+  margin-top: 12rem;
+  margin-bottom: 20rem;
+  align-content: center;
+  text-align: left;
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+  .nav-link {
+    color: white;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100; /* Lightest possible font weight */
+    transition: all 0.2s;
+    position: relative;
+    text-decoration: none; /* Ensure no default underline */
+  }
+  
+  .nav-link::after {
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    height: 1.5px;
+    width: 0;
+    background-color: white;
+    position: absolute;
+    bottom: 5px;
+    left: 50%; /* Start from the center */
+    transform: translateX(-50%); /* Center the starting point */
+  }
+  
+  .nav-link:hover::after, .nav-link.active::after {
+    opacity: 1;
+    width: 85%;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(249,249,249,0.15); /* Change background to white on hover */
+    border-radius: 10px; /* Add rounded corners */
+  }
+  
+  .navbar-toggler{
+    background-color: white;
+    color: white;
+  }
+  
+  .fa{
+    color: white;
+    font-size: 20px;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    transition: all 0.2s;
+  }
+  .fa:hover {
+    background-color: rgba(249,249,249,0.15); /* Change background to white on hover */
+    border-radius: 5px; /* Add rounded corners */
+  }
+
+  .styled-blockquote {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #2A272A;
+    padding: 0.5rem 0.5rem;
+    margin: 1.8rem 0 0.8rem;
+    position: relative;
+    color: white;
+    background-color: rgba(249,249,249,0.05);
+    border-left: 5px solid white;
+  }
+
+  .card{
+    width: 18rem;
+    height: auto;
+    margin: auto;
+    border: 0;
+    background: none;
+    border-radius: 40px;
+  }
+
+  .card-deck{
+    padding-top: 3rem;
+    padding-bottom: 15rem;
+  }
+
+  .card-img-top{
+    border-radius: 40px; /* Add rounded corners */ 
+    filter: drop-shadow(0 0 0.75rem rgba(0,0,0, 0.2));
+  }
+
+  /* when hovering, the image disappears */
+  .card-hover-text{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .card:hover .card-img-top{
+    opacity: 0.15;
+    border-radius: 40px;
+  }
+
+  /* text appears upon hovering */
+  .card:hover .card-hover-text{
+      opacity: 1;
+      visibility: visible;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: center;
+      font-size: 1.7rem;
+      color: #2A272A;
+  }
+
+a{
+  color: #2A272A;
+}

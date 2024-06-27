@@ -1,0 +1,126 @@
+.neonText {
+  color: #fff;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-fill-color: transparent; /* Will override color */
+}
+html, body{
+  overflow: auto;
+}
+body {
+    background: linear-gradient(-45deg, #845EC2, #D65DB1, #FF6F91, #FF9671, #FFC75F, #F9F871, #9BDE7E, #4BBC8E
+  );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  .break {
+      flex-basis: 100%;
+      height: 0;
+    }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .large-h1{
+      font-size: 750%;
+      text-transform: uppercase;
+      color: #2A272A;
+      font-family: sans-serif;
+      font-weight: bold;
+  }
+  .wrapper {
+      height: 100vh;
+      /*This part is important for centering*/
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  .typewritter {
+      width: 33ch;
+      margin: 0 auto;
+      animation: typing 5s steps(33, end), blink 1s step-end infinite;
+      white-space: nowrap;
+      overflow:hidden;
+      border-right: 3px solid;
+      font-family: monospace;
+      font-size: 2em;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0
+      }
+    }
+    @keyframes blink {
+      50% {
+        border-color: transparent
+      }
+    }
+  /* .page-arrow{
+      overflow: visible;
+      width: 8%;
+      height: 8%;
+      opacity: 0.3;
+      position: absolute;
+      bottom: 5%;
+      left: 46%;
+  } */
+  .arrow{
+    position: absolute;
+    top: 80%;
+    /* bottom: 3%; */
+    /* left: 50%; */
+    /* right: 50%; */
+    opacity: 0.8;
+    /* transform: translate(-50%,-50%); */
+  }
+  /* .arrow span{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-bottom: 8px solid #fff;
+    border-right: 8px solid #fff;
+    transform: rotate(45deg);
+    margin: -20px;
+    animation: animate 2.5s infinite;
+  }
+  .arrow span:nth-child(2){
+    animation-delay: -0.2s;
+  }
+  .arrow span:nth-child(3){
+    animation-delay: -0.4s;
+  } */
+  /* @keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px, -10px);
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        transform: rotate(45deg) translate(10px, 10px);
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-10px, -10px);
+    }
+}
+  .icon_box{
+    z-index: 2;
+    padding-top: 1%;
+    padding-right: 1%;
+  }
+  .icon{
+    size: 400pxn 400px;
+  } */
