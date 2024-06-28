@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 
-    <link rel="stylesheet" type="text/css" href= "../static/about.css">
+    <link rel="stylesheet" type="text/css" href="../static/portfolio.css">
     <title>About Me</title>
 </head>
 <body>
@@ -34,13 +34,13 @@
           <div class="d-flex w-100 justify-content-center">
             <ul class="navbar-nav">
               <li class="nav-item px-4">
-                <a class="nav-link" href="../main/main.html" style="color: white;">Home</a>
+                <a class="nav-link" href="../main/index.html" style="color: white;">Home</a>
               </li>
               <li class="nav-item px-4">
-                <a class="nav-link active" href="../about/about.html" style="color: white;">About Me</a>
+                <a class="nav-link" href="../about/index.html" style="color: white;">About Me</a>
               </li>
               <li class="nav-item px-4">
-                <a class="nav-link" href="../portfolio/portfolio.html" style="color: white;">Portfolio</a>
+                <a class="nav-link active" href="../portfolio/index.html" style="color: white;">Portfolio</a>
               </li>
               <li class="nav-item px-4">
                 <a class="nav-link" href="https://blog.yiyugong.com/" style="color: white;">Blog</a>
@@ -60,89 +60,89 @@
   
   <!-- main content -->
   <main>
-    <div class="container content">
-      <div class="row align-items-center">
-        <div class="col-md-5 text-center">
-          <img src="../static/img/selfie2.jpeg" class="img-fluid" alt="Selfie" style="max-width: 60%; height: auto;">
+    <div class="container mt-5">
+        <!-- row of cards -->
+        <div class="row g-4 justify-content-center mt-3 pt-3">
+            <!-- card -->
+            <div class="col-md-4 text-center">
+              <a href="https://www.canva.com/design/DAGGB2hLYO0/HpcbJuZuDP-0uPcGl8jvYw/view?utm_content=DAGGB2hLYO0&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank">
+                <div class="card">
+                  <img class="card-img-top" src="../static/img/module.png" alt="ai4all">
+                  <div class="card-img-overlay">
+                    <h2 class="card-hover-text">UCC x Module Consulting Project</h2>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- card -->
+            <div class="col-md-4 text-center">
+              <a href="https://abtech.org/" target="_blank">
+                <div class="card">
+                  <img src="../static/img/abtech3.jpeg" class="card-img-top" alt="edtutor">
+                  <div class="card-img-overlay">
+                    <h2 class="card-hover-text">Event Planning and Entertainment Production!</h2>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- card -->
+            <!-- <div class="col-md-4 text-center">
+                <div class="card">
+                    <img src="static/img/robo.jpg" class="card-img-top" alt="edtutor">
+                    <div class="card-body">
+                        <h2 class="card-hover-text">VEX Robotics Change Up Season Team 1010X</h2>
+                    </div>
+                    </div>
+            </div> -->
         </div>
-        <div class="col-md-7">
-          <div class="text-center text-md-start">
-            <span id="element">
-            </span>
+        <!-- row of cards -->
+        <div class="row g-4 justify-content-center card-deck">
+          <!-- card -->
+          <div class="col-md-4 text-center">
+            <a href="https://sites.google.com/view/ai4allcomputervision/home" target="_blank">
+              <div class="card">
+                <img class="card-img-top" src="../static/img/ai4all.png" alt="ai4all">
+                <div class="card-img-overlay">
+                  <h2 class="card-hover-text">AI4ALL Real-Time Facial Emotion Recognition Project</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="col-md-4 text-center">
+            <a href="https://devpost.com/software/edtutor" target="_blank">
+              <div class="card">
+                <img src="../static/img/edtutor.jpeg" class="card-img-top" alt="edtutor">
+                <div class="card-img-overlay">
+                  <h2 class="card-hover-text">TecHacks 2.0 Education Track Learning Platform Project</h2>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- card -->
+          <div class="col-md-4 text-center">
+            <a href="https://github.com/IEYU/2020-2021-Change-Up.git" target="_blank">
+              <div class="card">
+                <img src="../static/img/robo.jpg" class="card-img-top" alt="robot">
+                <div class="card-img-overlay">
+                  <h2 class="card-hover-text">VEX Robotics Change Up Season Team 1010X</h2>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!--load script-->
-    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
-    <script>
-        new TypeIt("#element", {
-            speed: 30,
-            startDelay: 900,
-            afterComplete: function (instance) {
-                instance.destroy();
-              }
-          })
-            //Hi,
-            .type("Hi", { delay: 100/3 })
-            .type(", ", { delay: 400})
-            .break({delay: 400})
-            .break().pause(349)
-
-            //My name is Maggie.
-            .type("My hame is", { delay: 300/3})
-            .move(-6, {delay: 500/3})
-            .delete(1, {delay: 200/3})
-            .type("n", {delay: 400/3})
-            .move(6, {delay: 100/3})
-            .type(" ", {delay: 100/3})
-            .type("Maggie. ", {delay: 500})
-            .break({delay: 200})
-            .break().pause(349)
-
-            //I'm an Electrical and Computer Engineering student at Carnegie Mellon University.
-            .type("I'm an Electical", { delay: 300/3})
-            .move(-4, {delay: 300/3})
-            .type("r", {delay: 100/3})
-            .move(4, {delay: 300/3})
-            .type(" ", {delay: 100/3})
-            .type("and Computer Engineering student at Carnegie Mellon University. ", { delay: 500})
-            .break({delay: 200})
-            .break().pause(349)
-
-            //I love building random but cool things!
-            .type("I love building random but coll things!", {delay: 200/3})
-            .move(-9, {delay: 300/3})
-            .delete(1, {delay: 200/3})
-            .type("o", {delay: 100/3})
-            .move(10, {delay: 300/3})
-            .break({delay: 200})
-            .break().pause(349)
-
-            //Check out the portfolio page to see what I've been working on (･ω<)☆
-            .type("Check out the portfolio page to see what I've been working on", {delay: 150/3})
-            .type(" (", {delay: 100/3})
-            .type("･", {delay: 100/3})
-            .type("ω", {delay: 100/3})
-            .type("<", {delay: 100/3})
-            .type(")", {delay: 100/3})
-            .type("☆", {delay: 100/3})
-
-            .go();
-    </script>
     </div>
   </main>
 
   <!-- footer -->
-  <footer class="text-center text-white">
+  <footer class="text-center text-white" style="background-color: #2A272A;">
     <div class="container-fluid">
       <!-- name -->
       <div class="row justify-content-center">
         <!-- quote -->
         <div class="col-6">
           <blockquote class="styled-blockquote">
-            <q>You are here, at the start of a moment, on the edge of the world. Where the river meets the sea.</q>
+            <q>Life, liberty, and the pursuit of happiness. We fought for these ideals we shouldn't settle for less.</q>
           </blockquote>
         </div>
       </div>
