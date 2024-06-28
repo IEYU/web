@@ -79,50 +79,56 @@ footer {
     border-left: 5px solid white;
   }
 
-  .card{
-    width: 18rem;
-    height: auto;
-    margin: auto;
-    border: 0;
-    background: none;
-    border-radius: 40px;
-  }
-
   .card-deck{
     padding-top: 3rem;
     padding-bottom: 15rem;
   }
 
-  .card-img-top{
-    border-radius: 40px; /* Add rounded corners */ 
-    filter: drop-shadow(0 0 0.75rem rgba(0,0,0, 0.2));
+  .card {
+    width: 18rem;
+    height: auto;
+    margin: auto;
+    border: 0;
+    background: none; /* Ensures no background is applied */
+    background-color: transparent; /* Ensures background color is transparent */
+    border-radius: 40px;
+    box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.2); /* Adds a shadow to the card */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+  .card-img-top {
+    border-radius: 40px;
+  }
+
+  .card-hover-text{
+    background: none;
+    visibility: hidden;
   }
 
   /* when hovering, the image disappears */
-  .card-hover-text{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-  }
-
   .card:hover .card-img-top{
     opacity: 0.15;
     border-radius: 40px;
+    transition: opacity 0.3s ease;
   }
 
   /* text appears upon hovering */
   .card:hover .card-hover-text{
-      opacity: 1;
-      visibility: visible;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      text-align: center;
-      font-size: 1.7rem;
-      color: #2A272A;
-  }
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7rem;
+    color: #2A272A;
+    width: 80%;
+}
 
 a{
   color: #2A272A;
