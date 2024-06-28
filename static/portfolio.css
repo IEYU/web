@@ -116,7 +116,7 @@ footer {
   .card:hover .card-img-top{
     opacity: 0.15;
     border-radius: 40px;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease;
   }
 
   /* text appears upon hovering */
