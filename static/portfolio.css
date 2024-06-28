@@ -6,6 +6,10 @@ footer {
   background-color: #2A272A !important;
 }
 
+.container{
+  margin-bottom: 18rem;
+}
+
 .container.content {
   flex: 1; /* This makes the content container grow to fill the remaining vertical space */
   margin-top: 12rem;
@@ -80,8 +84,7 @@ footer {
   }
 
   .card-deck{
-    padding-top: 3rem;
-    padding-bottom: 15rem;
+    margin-top: 1rem;
   }
 
   .card {
