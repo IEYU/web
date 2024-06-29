@@ -1,11 +1,25 @@
-body {
-	background: #2A272A;
-	background-size: 400% 400%;
+html{
+  height: 100vh;
 }
-.container{
-    align-content: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
+
+body {
+	background: url(../static/img/rb.avif);
+	background-size: auto;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  justify-content: center;
+  align-content: center;
+  background-position-y: center;
+}
+
+.container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  box-shadow: 0 0 0.75rem 0 rgba(0, 0, 0, .2);
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, .05);
+  backdrop-filter: blur(10px);
 }
 
 /* eyes */
